@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cors());
 
-app.use(express.static('client/build'));
+app.use(express.static(path.join(__dirname, "client", "build")));
 
 // Routes
 app.use("/vote", require("./routes/vote"));
@@ -23,8 +23,6 @@ app.use("/get-all-teachers", require("./routes/get-all-teachers"));
 
 // Step 3
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static( 'client/build' ));
-
   app.get('*', (req, res) => {
       res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
   });
