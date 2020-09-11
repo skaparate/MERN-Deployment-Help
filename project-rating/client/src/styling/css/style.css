@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1; }
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s; }
+
+.bg3 {
+  animation-duration: 5s; }
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%); }
+  100% {
+    transform: translateX(25%); } }
+#name-teacher-vote {
+  font-size: 3.5rem; }
+
+#play-now-btn-extreme {
+  color: white;
+  background-color: #434343;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 60px;
+  border-radius: 5px;
+  font-size: 2rem;
+  border: none;
+  transition: all 0.4s ease 0s;
+  display: none; }
+  #play-now-btn-extreme:hover {
+    color: #fff;
+    background-color: #71019C;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.4s ease 0s; }
+
+#play-now-btn-mobile {
+  color: white;
+  background-color: #434343;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 60px;
+  border-radius: 5px;
+  font-size: 2rem;
+  border: none;
+  transition: all 0.4s ease 0s;
+  display: none; }
+  #play-now-btn-mobile:hover {
+    color: #fff;
+    background-color: #71019C;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.4s ease 0s; }
+
+#play-now-btn {
+  color: white;
+  background-color: #434343;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 60px;
+  border-radius: 5px;
+  font-size: 2rem;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s; }
+  #play-now-btn:hover {
+    color: #fff;
+    background-color: #71019C;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.4s ease 0s; }
+
+.progress {
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 30px;
+  width: 300px; }
+  .progress h4 {
+    color: #fff;
+    margin-left: 10px; }
+
+.progress-value {
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #fff;
+  height: 30px; }
+
+#progress-bars-classes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  margin-top: 20px;
+  width: 100%; }
+  #progress-bars-classes h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; }
+  #progress-bars-classes .best-classes {
+    background-color: purple;
+    padding: 50px;
+    border-radius: 40px;
+    margin: 0px; }
+    #progress-bars-classes .best-classes h3 {
+      color: #fff;
+      text-align: center;
+      margin-top: 30px; }
+  #progress-bars-classes .best-person {
+    background-color: purple;
+    padding: 50px;
+    border-radius: 40px;
+    margin: 0px; }
+    #progress-bars-classes .best-person h3 {
+      color: #fff;
+      text-align: center;
+      margin-top: 30px; }
+
+#title-website {
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  font-size: 6rem;
+  margin-top: 2rem; }
+
+#title-website-class {
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  font-size: 6rem;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.buttons-play {
+  margin-top: 200px;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-gap: 10rem;
+  grid-template-rows: repeat(2, 1fr); }
+  .buttons-play #play-now-btn {
+    font-size: 1.5rem;
+    text-align: center; }
+
+#votes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+  width: 80%;
+  margin: auto; }
+
+.option-vote {
+  margin-top: 0px;
+  font-family: 'Staatliches', cursive;
+  cursor: pointer;
+  height: 70vh;
+  background-color: #86516B;
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: table-cell;
+  transition-property: height;
+  transition-delay: 0ms;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  margin-top: 0px;
+  margin: 0px; }
+  .option-vote h1 {
+    line-height: 70vh; }
+  .option-vote:hover {
+    height: 75vh; }
+
+#progress-bars-classes-results {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px; }
+  #progress-bars-classes-results h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; }
+  #progress-bars-classes-results .best-classes {
+    margin: auto;
+    background-color: purple;
+    padding: 150px;
+    border-radius: 40px; }
+    #progress-bars-classes-results .best-classes h3 {
+      color: #fff;
+      text-align: center;
+      margin-top: 30px; }
+  #progress-bars-classes-results .best-person {
+    margin: auto;
+    background-color: purple;
+    padding: 150px;
+    border-radius: 40px; }
+    #progress-bars-classes-results .best-person h3 {
+      color: #fff;
+      text-align: center;
+      margin-top: 30px; }
+
+.progress-results {
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 30px;
+  width: 500px; }
+  .progress-results h4 {
+    color: #fff;
+    margin-left: 10px; }
+
+.progress-value-results {
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #fff;
+  height: 25px; }
+
+#progress-bars-classes-results {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  margin-top: 20px; }
+  #progress-bars-classes-results h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; }
+  #progress-bars-classes-results .best-classes {
+    margin: auto;
+    background-color: purple;
+    border-radius: 40px;
+    padding: 40px; }
+    #progress-bars-classes-results .best-classes h3 {
+      color: #fff;
+      text-align: center;
+      margin-top: 30px; }
+  #progress-bars-classes-results .best-person {
+    margin: auto;
+    background-color: purple;
+    padding: 40px;
+    border-radius: 40px; }
+    #progress-bars-classes-results .best-person h3 {
+      color: #fff;
+      text-align: center;
+      margin-top: 30px; }
+
+#title-website-class-small {
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+#buttons-results-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 60%;
+  margin: auto;
+  margin-bottom: 100px; }
+  #buttons-results-menu a {
+    margin: auto; }
+
+@media (max-width: 1355px) {
+  #progress-bars-classes {
+    grid-template-columns: repeat(3, 1fr); }
+    #progress-bars-classes .best-classes {
+      margin-left: 100px;
+      padding: 40px; }
+      #progress-bars-classes .best-classes h3 {
+        margin-top: 30px; }
+    #progress-bars-classes .best-person {
+      margin-right: 100px;
+      padding: 40px; }
+      #progress-bars-classes .best-person h3 {
+        margin-top: 30px; }
+    #progress-bars-classes #play-now-btn {
+      display: none; }
+
+  #play-now-btn-mobile {
+    display: block;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px; } }
+@media (max-width: 1220px) {
+  .progress-results {
+    width: 400px; } }
+@media (max-width: 1050px) {
+  .progress-results {
+    width: 300px; } }
+@media (max-width: 900px) {
+  #title-website-class-small {
+    font-size: 2rem; }
+
+  #buttons-results-menu {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 60%;
+    margin: auto;
+    grid-gap: 2rem;
+    margin-bottom: 2rem; }
+
+  #play-now-btn {
+    text-align: center;
+    font-size: 1rem; }
+
+  #progress-bars-classes-results {
+    grid-template-columns: repeat(2, 1fr); }
+    #progress-bars-classes-results h1 {
+      font-size: 0.9rem; }
+    #progress-bars-classes-results h3 {
+      font-size: 1rem; }
+    #progress-bars-classes-results h4 {
+      font-size: 1rem;
+      padding-top: 7px; }
+
+  #result-best-classes {
+    width: 150px; }
+
+  .progress-results {
+    width: 100px;
+    margin-left: -10px; } }
+@media (max-width: 1000px) {
+  .option-vote {
+    transition-property: none;
+    transition-delay: none;
+    transition-duration: none;
+    transition-timing-function: none; }
+    .option-vote:hover {
+      height: 100%; }
+
+  #progress-bars-classes {
+    grid-template-columns: repeat(3, 1fr); }
+    #progress-bars-classes .best-classes {
+      margin-left: 50px;
+      padding: 40px; }
+      #progress-bars-classes .best-classes h3 {
+        margin-top: 30px; }
+    #progress-bars-classes .best-person {
+      margin-right: 50px;
+      padding: 40px; }
+      #progress-bars-classes .best-person h3 {
+        margin-top: 30px; } }
+@media (max-width: 900px) {
+  .progress {
+    width: 250px; }
+
+  #progress-bars-classes {
+    grid-gap: 0rem; }
+    #progress-bars-classes .best-classes {
+      margin-left: 70px;
+      padding: 40px; }
+    #progress-bars-classes .best-person {
+      margin-right: 70px;
+      padding: 40px; }
+
+  #title-website {
+    font-size: 4rem; } }
+@media (max-width: 840px) {
+  .progress {
+    width: 200px; } }
+@media (max-width: 730px) {
+  #votes {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+    width: 80%; }
+
+  .option-vote {
+    height: 30vh; }
+    .option-vote #name-teacher-vote {
+      line-height: 30vh; }
+
+  .progress {
+    width: 150px; }
+
+  #title-website-class {
+    text-align: center;
+    font-size: 3rem; }
+
+  #votes {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr); } }
+@media (max-width: 650px) {
+  #play-now-btn-mobile {
+    display: none; }
+
+  #progress-bars-classes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0rem; }
+    #progress-bars-classes h3 {
+      font-size: 1rem; }
+    #progress-bars-classes h1 {
+      font-size: 1.5rem; }
+    #progress-bars-classes .best-classes {
+      margin-left: 0px;
+      padding: 30px 60px;
+      margin-bottom: 30px; }
+    #progress-bars-classes .best-person {
+      margin-right: 0px;
+      padding: 30px 60px;
+      margin-bottom: 30px; }
+
+  .progress {
+    justify-content: flex-start;
+    border-radius: 100px;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 20px; }
+    .progress h4 {
+      color: #fff;
+      margin-left: 10px;
+      font-size: 1rem;
+      padding-top: 7px; }
+
+  #btn-extreme {
+    width: 50%;
+    margin: auto; }
+
+  #play-now-btn-extreme {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center; }
+
+  .progress-value {
+    height: 20px; } }
+@media (max-width: 348px) {
+  #title-website {
+    font-size: 3.5rem; } }
+
+/*# sourceMappingURL=style.css.map */
